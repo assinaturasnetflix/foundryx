@@ -1,7 +1,7 @@
 {
-  "name": "cryptomoz-invest-backend",
+  "name": "foundry-invest-backend",
   "version": "1.0.0",
-  "description": "Backend para a plataforma de investimentos CryptoMoz",
+  "description": "Backend para a plataforma de investimentos Foundry",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -11,7 +11,7 @@
   "keywords": [
     "crypto",
     "investment",
-    "mozambique",
+    "foundry",
     "nodejs",
     "express",
     "mongodb"
@@ -20,6 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",

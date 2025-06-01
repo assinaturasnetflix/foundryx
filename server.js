@@ -9,6 +9,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
+const cors = require('cors');
 
 // --- Constantes e Configurações Globais ---
 const app = express();
@@ -42,6 +43,7 @@ if (!MONGO_URI || !JWT_SECRET || !ADMIN_EMAIL || !ADMIN_PASSWORD || !ADMIN_SECUR
 
 // --- Middlewares Globais ---
 app.use(express.json());
+app.use(cors())
 
 // -----------------------------------------------------------------------------
 // --- MODELOS DO MONGOOSE (SCHEMAS) ---
